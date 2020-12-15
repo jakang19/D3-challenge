@@ -67,7 +67,7 @@ d3.csv("/assets/data/data.csv").then(function(data) {
     	.attr("cy", d => yLinearScale(d.healthcare))
     	.attr("r", "15")
     	.attr("class", "stateCircle");
-    var circleText = chartGroup.selectAll("text")
+    var circleText = chartGroup.selectAll(null)
     	.data(data)
     	.enter()
     	.append("text")
